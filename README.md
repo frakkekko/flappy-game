@@ -1,6 +1,10 @@
-# Getting Started with Create React App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+![SCR-20230307-ozp](https://user-images.githubusercontent.com/69313887/223494235-e8be7ceb-886f-46fc-bde7-9adb316d2351.png)
+
+Flutter Forest is a fun and addictive game where you control a cute protagonist that needs to navigate through a forest full of flying monsters. With simple one-tap controls, try to achieve the highest score possible by avoiding obstacles and flying as far as you can. A perfect game for a quick break or to challenge your friends for the highest score!
+
+
+Project made in collaboration with <b>Francesco Schiavone</b>.
 
 ## Available Scripts
 
