@@ -10,6 +10,12 @@ Project made in collaboration with <b>Paolo Di Martino</b>.
 
 In the project directory, you can run:
 
+### `npm install`
+
+Install all project dependencies.
+If something went wrong you can run: 
+## `npm install --force`
+
 ### `npm start`
 
 Runs the app in the development mode.\
