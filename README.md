@@ -14,7 +14,7 @@ In the project directory, you can run:
 
 Install all project dependencies.
 If something went wrong you can run: 
-## `npm install --force`
+#### `npm install --force`
 
 ### `npm start`
 
