@@ -1,0 +1,219 @@
+.game-container {
+  position: relative;
+  overflow: hidden;
+  height: 100vh;
+  width: 100vw;
+}
+
+.game-over {
+  text-align: center;
+  line-height: 1.5;
+  font-family: "Press Start 2P", cursive;
+  padding: 1rem 0;
+  color: orange;
+}
+
+.game-over-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  position: absolute;
+  top: 50%;
+  right: 50%;
+  transform: translate(50%, -50%);
+  font-size: 34px;
+  z-index: 5;
+  color: white;
+  cursor: pointer;
+  background-color: rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(25px);
+  border-radius: 20px;
+  padding: 40px;
+}
+
+.game-over-choices {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.pause {
+  position: absolute;
+  background-color: transparent;
+  top: 20px;
+  left: 40px;
+  font-size: 34px;
+  z-index: 5;
+  color: white;
+  cursor: pointer;
+  padding: 20px 60px;
+  backdrop-filter: blur(25px);
+  border-radius: 12px;
+}
+
+.pause-popup {
+  position: absolute;
+  top: 50%;
+  right: 50%;
+  transform: translate(50%, -50%);
+  backdrop-filter: blur(25px);
+  font-size: 34px;
+  z-index: 5;
+  color: white;
+  cursor: pointer;
+  background-color: rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(25px);
+  border-radius: 20px;
+  padding: 40px;
+}
+
+.score {
+  position: absolute;
+  top: 20px;
+  right: 40px;
+  font-size: 34px;
+  z-index: 5;
+  border-radius: 12px;
+  padding: 20px 60px;
+  background-color: transparent;
+  backdrop-filter: blur(25px);
+  color: white;
+  cursor: pointer;
+}
+
+.layer {
+  position: absolute;
+}
+
+.sky {
+  width: 100%;
+  height: inherit;
+  background-image: url("../../assets/images/game/layers/sky.png");
+}
+
+.sky_animation {
+  background-repeat: repeat-x;
+  animation: shift-parallax 60s infinite linear;
+}
+
+.rocks {
+  width: 100%;
+  height: 100%;
+  background-image: url("../../assets/images/game/layers/rocks.png");
+}
+
+.rocks_animation {
+  background-repeat: repeat-x;
+  animation: shift-parallax 40s infinite linear;
+}
+
+.clouds-1 {
+  width: 100%;
+  height: 100%;
+  background-image: url("../../assets/images/game/layers/clouds_1.png");
+}
+
+.clouds-1_animation {
+  background-repeat: repeat-x;
+  animation: shift-parallax 55s infinite linear;
+}
+
+.clouds-2 {
+  width: 100%;
+  height: 100%;
+  background-image: url("../../assets/images/game/layers/clouds_2.png");
+}
+
+.clouds-2_animation {
+  background-repeat: repeat-x;
+  animation: shift-parallax 50s infinite linear;
+}
+
+.ground-1 {
+  width: 100%;
+  height: 100%;
+  background-image: url("../../assets/images/game/layers/ground_1.png");
+}
+
+.ground-1_animation {
+  background-repeat: repeat-x;
+  animation: shift-parallax 35s infinite linear;
+}
+
+.ground-2 {
+  width: 100%;
+  height: 100%;
+  background-image: url("../../assets/images/game/layers/ground_2.png");
+}
+
+.ground-2_animation {
+  background-repeat: repeat-x;
+  animation: shift-parallax 15s infinite linear;
+}
+.ground-3 {
+  width: 100%;
+  height: 100%;
+  background-image: url("../../assets/images/game/layers/ground_3.png");
+}
+
+.ground-3_animation {
+  background-repeat: repeat-x;
+  animation: shift-parallax 6s infinite linear;
+}
+
+.plant {
+  width: 100%;
+  height: 100%;
+  background-image: url("../../assets/images/game/layers/plant.png");
+}
+
+.plant_animation {
+  background-repeat: repeat-x;
+  animation: shift-parallax 6s infinite linear;
+}
+
+.paused {
+  animation-play-state: paused;
+}
+
+@keyframes shift-parallax {
+  0% {
+    background-position: 0;
+  }
+  100% {
+    background-position: -1920px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .score {
+    top: 10px;
+    right: 10px;
+    font-size: 30px;
+    padding: 10px 30px;
+  }
+
+  .pause {
+    top: 10px;
+    left: 10px;
+    font-size: 30px;
+    padding: 10px 30px;
+  }
+
+  .pause img {
+    width: 30px;
+    height: 30px;
+  }
+
+  .game-over {
+    padding: 0.6rem 2.4rem;
+    line-height: 1.8;
+    font-size: 22px;
+  }
+
+  .game-over-choices img {
+    width: 38px;
+  }
+}

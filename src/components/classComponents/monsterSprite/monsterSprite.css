@@ -1,0 +1,46 @@
+.character {
+  background-color: transparent;
+  position: absolute;
+}
+
+.monster-yellow {
+  width: 100px;
+  height: 76px;
+}
+
+.monster-purple {
+  width: 82px;
+  height: 70px;
+}
+
+.monster-bat {
+  width: 92px;
+  height: 76px;
+}
+
+.monster-red {
+  width: 84px;
+  height: 74px;
+}
+
+@media screen and (max-width: 480px) {
+  .monster-yellow {
+    width: 58px;
+    height: 44px;
+  }
+
+  .monster-purple {
+    width: 49px;
+    height: 43px;
+  }
+
+  .monster-bat {
+    width: 54px;
+    height: 45px;
+  }
+
+  .monster-red {
+    width: 49px;
+    height: 44px;
+  }
+}

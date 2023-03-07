@@ -1,0 +1,92 @@
+.leaderboard-page-container {
+  position: relative;
+  overflow: hidden;
+  height: 100vh;
+  width: 100vw;
+  background-image: url("../../assets/images/login/login_background.png");
+  background-position: center;
+  background-size: cover;
+  filter: grayscale(20%);
+}
+
+.leaderboard-page {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  color: white;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  max-width: 600px;
+  backdrop-filter: blur(15px);
+  background-color: rgba(0, 0, 0, 0.5);
+  border-radius: 20px;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.leaderboard-title {
+  font-family: "Press Start 2P", cursive;
+}
+
+.leaderboard-table {
+  width: 100%;
+  border-collapse: collapse;
+  border: 1px solid #ccc;
+  margin-bottom: 20px;
+  display: block;
+  overflow-y: auto;
+  height: 450px;
+}
+
+/* .leaderboard-table:hover {
+  overflow-y: auto;
+} */
+
+.leaderboard-table thead {
+  background-color: #4c6267;
+  position: sticky;
+  top: 0;
+}
+
+.leaderboard-table tbody {
+  /* background-color: yellow; */
+}
+
+.leaderboard-table th {
+  color: white;
+  font-family: "Press Start 2P", cursive;
+  font-size: 1.3rem;
+  padding: 10px 30px;
+}
+
+.leaderboard-table td {
+  padding: 5px 40px;
+  font-family: "Caveat Brush", cursive;
+  font-size: 1.4rem;
+  font-weight: 400;
+}
+
+@media screen and (max-width: 480px) {
+  .leaderboard-page {
+    width: 100vw;
+    height: 100vh;
+    border-radius: 0;
+  }
+
+  .leaderboard-table {
+    border: none;
+  }
+
+  .leaderboard-table thead {
+    top: 10;
+  }
+
+  .leaderboard-table th {
+    font-size: 14px;
+  }
+}

@@ -1,0 +1,11 @@
+.character-player {
+  width: 92px;
+  height: 78px;
+}
+
+@media screen and (max-width: 480px) {
+  .character-player {
+    width: 55px;
+    height: 45px;
+  }
+}
